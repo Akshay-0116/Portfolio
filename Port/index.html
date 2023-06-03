@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>MY PORTFOLIO</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="profile-photo">
+      <img src="AK pass photo.jpeg" alt="Profile Photo">
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm Akshay R</h2>
+      <h3>A passionate Web Developer</h3>
+      <a href="#contact" class="cta-button">Get In Touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate and dedicated fresher .NET developer. I have recently completed my education in .NET development and I am eager to apply my skills and knowledge in real-world projects. I have a strong foundation in programming languages such as C# and experience with ASP.NET, MVC, and SQL Server.</p>
+    <p>Throughout my education, I have worked on various projects that have given me hands-on experience in developing web applications and working with databases. I am enthusiastic about learning new technologies and keeping up with the latest trends in the field of .NET development.</p>
+    <p>I enjoy working in a collaborative environment and contributing to the success of a team. I am constantly seeking opportunities to expand my skills and grow as a .NET developer.</p>
+    
+    <section id="skills" style="margin-top: 50px;" class="skills-section">
+  <h2>Skills</h2>
+  <table>
+    <tr>
+      <th>Programming Languages</th>
+      <th>Front-End</th>
+      <th>Database</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>C#</li>
+          <li>JavaScript</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>React</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>SQL Server</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</section>
+
+  <section id="Resume">
+    <div class="Resume-button">
+      <a href="Akshay Resume.pdf" target="_blank">Resume</a>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <h2>Project</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <div class="project-images">
+        <img class="project-image" src="project1.jpg.png" alt="Project 1 Image">
+        <div class="additional-images">
+          <img src="project1-1.jpg.png" alt="Project 1 Image 1">
+          <img src="project1-2.jpg.png" alt="Project 1 Image 2">
+          <img src="project1-3.jpg.png" alt="Project 1 Image 3">
+          <img src="project1-4.jpg.png" alt="Project 1 Image 4">
+          <img src="project1-5.jpg.png" alt="Project 1 Image 5">
+          <img src="project1-6.jpg.png" alt="Project 1 Image 6">
+          <img src="project1-7.jpg.png" alt="Project 1 Image 7">
+        </div>
+      </div>
+      <div class="project-description">
+        <p>HOSPITAL APPOINTMENT BOOKING– Developed a comprehensive web-based application using a .NET framework for managing hospital appointments. Implemented user registration, Doctor Registration, login, and profile management functionalities ensuring secure data storage and retrieval. Designed and integrated an intuitive user interface for patients to book appointments with doctors based on availability and specialty. Utilized a backend database (mention the specific database system if applicable) to efficiently store and retrieve appointment data.</p>
+      </div>
+    </div>
+    <!-- Add more project divs as needed -->
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 My Portfolio. Designed and Developed by Akshay R</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const projectImage = document.querySelector('.project-image');
+  const additionalImages = document.querySelector('.additional-images');
+  const projectDiv = document.querySelector('.project');
+
+  projectImage.addEventListener('click', function() {
+    projectDiv.classList.toggle('show-images');
+  });
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > projectImage.offsetTop) {
+      projectDiv.classList.remove('show-images');
+    }
+  });
+});
+
+  </script>
+  
+  
+</body>
+
+</html>
